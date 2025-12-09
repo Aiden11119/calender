@@ -52,7 +52,7 @@ generateCalendar(currentYear, new Date().getMonth());
 
 
 yearSelect.onchange = monthSelect.onchange = function () {
-    generateCalendar(yearSelect.value, monthSelect.value);
+    generateCalendar(Number(yearSelect.value), Number(monthSelect.value));
 }
 
 
