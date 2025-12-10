@@ -38,7 +38,7 @@ function generateCalendar(year, month) {
         const isToday = year == new Date().getFullYear() &&
                         month == new Date().getMonth() &&
                         d == new Date().getDate();
-        const className = isToday ? "today" : "";
+        const className = isToday ? "today" :"";
 
         html += `<td class="${className}" ondblclick="editDay(${year}, ${month}, ${d})">${d}</td>`;
     }
